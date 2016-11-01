@@ -388,10 +388,10 @@ service audiod /system/bin/audiod
     user system
     group system
 
-service charger /sbin/healthd -c
+service charger /charger
     class charger
     critical
-    seclabel u:r:healthd:s0
+    seclabel u:r:charger:s0
 
 service hwaddrs /system/bin/hwaddrs
     class core
