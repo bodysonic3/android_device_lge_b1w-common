@@ -56,6 +56,7 @@ on init
 
 on fs
     mount_all ./fstab.b1w
+    swapon_all ./fstab.b1w
     restorecon_recursive /persist
     restorecon_recursive /persist-lg
     restorecon_recursive /sns
