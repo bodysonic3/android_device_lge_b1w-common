@@ -592,7 +592,7 @@
 
     <path name="speaker-mic">
         <path name="adc3" />
-        <ctl name="ADC3 Volume" value="14" />
+        <ctl name="ADC3 Volume" value="15" />
         <ctl name="DEC4 Volume" value="99" />
     </path>
 
@@ -609,7 +609,7 @@
     <path name="handset-mic">
         <path name="adc1" />
         <ctl name="ADC1 Volume" value="12" />
-        <ctl name="DEC6 Volume" value="66" />
+        <ctl name="DEC6 Volume" value="70" />
     </path>
 
     <path name="handset-hac">
@@ -1023,7 +1023,7 @@
     <path name="voice-rec-mic">
         <path name="handset-mic" />
         <ctl name="ADC1 Volume" value="14" />
-        <ctl name="DEC6 Volume" value="73" />
+        <ctl name="DEC6 Volume" value="82" />
     </path>
 
     <path name="camcorder-mic">
@@ -1034,10 +1034,10 @@
         <ctl name="SLIM TX8 MUX" value="DEC6" />
         <ctl name="DEC6 MUX" value="ADC1" />
         <ctl name="SLIM_0_TX Channels" value="Two" />
-        <ctl name="ADC1 Volume" value="12" />
-        <ctl name="DEC6 Volume" value="73" />
-        <ctl name="ADC3 Volume" value="12" />
-        <ctl name="DEC4 Volume" value="73" />
+        <ctl name="ADC1 Volume" value="13" />
+        <ctl name="DEC6 Volume" value="82" />
+        <ctl name="ADC3 Volume" value="13" />
+        <ctl name="DEC4 Volume" value="82" />
     </path>
 
     <path name="hdmi-tx">
