@@ -740,7 +740,7 @@
     <path name="voice-handset">
         <path name="sidetone-handset" />
         <path name="handset" />
-        <ctl name="RX1 Digital Volume" value="66" />
+        <ctl name="RX1 Digital Volume" value="74" />
         <ctl name="EAR PA Gain" value="POS_6_DB" />
     </path>
 
