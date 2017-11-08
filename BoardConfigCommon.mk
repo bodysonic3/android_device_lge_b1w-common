@@ -146,8 +146,8 @@ WIFI_DRIVER_FW_PATH_STA     := "/system/etc/firmware/fw_bcmdhd.bin"
 WIFI_DRIVER_FW_PATH_AP      := "/system/etc/firmware/fw_bcmdhd_apsta.bin"
 
 # NFC
-BOARD_NFC_CHIPSET := pn547
-BOARD_NFC_DEVICE := "/dev/pn547"
+BOARD_NFC_HAL_SUFFIX := msm8974
+NXP_CHIP_TYPE := PN547C2
 
 
 # TWRP Support - Optional

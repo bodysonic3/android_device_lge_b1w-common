@@ -170,12 +170,10 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:system/etc/media_codecs_google_telephony.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:system/etc/media_codecs_google_video.xml
 
-# NFC
+# NFC packages
 PRODUCT_PACKAGES += \
-    com.android.nfc_extras \
     NfcNci \
-    nfc_nci.pn54x.default \
-    Tag
+    nfc_nci.d838
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/nfc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
