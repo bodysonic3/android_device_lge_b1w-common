@@ -383,7 +383,6 @@ service audiod /system/bin/audiod
 service charger /sbin/healthd -c
     class charger
     critical
-    seclabel u:r:healthd:s0
 
 service hwaddrs /system/bin/hwaddrs
     class core
