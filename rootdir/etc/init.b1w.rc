@@ -282,6 +282,9 @@ on boot
     chown wifi wifi /sys/module/bcmdhd/parameters/firmware_path
     chown wifi wifi /sys/module/wlan/parameters/fwpath
 
+    # Mark wifi driver as unloaded - "ok" indicates loaded
+    setprop wlan.driver.status not_ok
+
     # create symlink for fb1 as HDMI
     symlink /dev/graphics/fb1 /dev/graphics/hdmi
 
