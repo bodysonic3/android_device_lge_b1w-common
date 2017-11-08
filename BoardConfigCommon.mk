@@ -69,8 +69,8 @@ BOARD_CHARGING_CMDLINE_NAME := "androidboot.mode"
 BOARD_CHARGING_CMDLINE_VALUE := "chargerlogo"
 BOARD_CHARGER_ENABLE_SUSPEND := true
 
-# CMHW
-BOARD_HARDWARE_CLASS := device/lge/b1w-common/cmhw/
+
+# LG
 TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/input/lge_touch/dt2w_enable"
 
 # Display
