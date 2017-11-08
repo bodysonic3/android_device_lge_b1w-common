@@ -265,6 +265,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensor_def_common.conf:system/etc/sensor_def_common.conf
 
 
+# Renderscript
+PRODUCT_PACKAGES += \
+     android.hardware.renderscript@1.0-impl 
+
+
 # Sensors
 PRODUCT_PACKAGES += \
 	android.hardware.sensors@1.0-impl \
