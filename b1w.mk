@@ -65,6 +65,8 @@ $(call inherit-product, frameworks/native/build/phone-xxhdpi-2048-hwui-memory.mk
 
 # Audio
 PRODUCT_PACKAGES += \
+    android.hardware.audio@2.0-impl \
+    android.hardware.audio.effect@2.0-impl \
     audio.a2dp.default \
     audio.primary.msm8974 \
     audio.r_submix.default \
@@ -82,6 +84,8 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
+    android.hardware.bluetooth@1.0-impl 
+    libbt-vendor \
     hwaddrs
 
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -100,14 +104,27 @@ PRODUCT_PACKAGES += \
 
 # Display
 PRODUCT_PACKAGES += \
+    android.hardware.graphics.allocator@2.0-impl \
+    android.hardware.graphics.mapper@2.0-impl \
+    android.hardware.graphics.composer@2.1-impl \
+    android.hardware.memtrack@1.0-impl \
     copybit.msm8974 \
     gralloc.msm8974 \
     hwcomposer.msm8974 \
     memtrack.msm8974
 
+# DRM
+PRODUCT_PACKAGES += \
+    android.hardware.drm@1.0-impl
+ 
+
 # QuickCircle Case App
 PRODUCT_PACKAGES += \
     QuickCircle
+
+# IRDA
+PRODUCT_PACKAGES += \
+    android.hardware.ir@1.0-impl
 
 # Gello
 # PRODUCT_PACKAGES += \
@@ -115,7 +132,13 @@ PRODUCT_PACKAGES += \
 
 # GPS
 PRODUCT_PACKAGES += \
+	android.hardware.gnss@1.0-impl \
     gps.msm8974
+
+# Keymaster
+PRODUCT_PACKAGES += \
+   android.hardware.keymaster@3.0-impl
+
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/etc/flp.conf:system/etc/flp.conf \
@@ -146,6 +169,7 @@ PRODUCT_COPY_FILES += \
 
 # Lights
 PRODUCT_PACKAGES += \
+	android.hardware.light@2.0-impl \
     lights.msm8974
 
 # OMX
@@ -175,6 +199,12 @@ PRODUCT_PACKAGES += \
     NfcNci \
     nfc_nci.msm8974
 
+PRODUCT_PACKAGES += \
+    android.hardware.nfc@1.0-impl \
+    com.android.nfc_extras \
+    Tag
+
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/nfc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
     $(LOCAL_PATH)/nfc/libnfc-nxp.conf:system/etc/libnfc-nxp.conf \
@@ -182,6 +212,7 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
+	android.hardware.power@1.0-impl \
     power.msm8974
 
 # Qualcomm
@@ -205,14 +236,31 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensor_def_common.conf:system/etc/sensor_def_common.conf
 
+
+# Sensors
+PRODUCT_PACKAGES += \
+   android.hardware.sensors@1.0-impl
+
+
 # Thermal
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal-engine-8974.conf:system/etc/thermal-engine-8974.conf
+
 
 # Touchscreen
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
     $(LOCAL_PATH)/keylayout/touch_dev.idc:system/usr/idc/touch_dev.idc
+
+
+# USB
+PRODUCT_PACKAGES += \
+    android.hardware.usb@1.0-service
+
+# Vibrator
+PRODUCT_PACKAGES += \
+    android.hardware.vibrator@1.0-impl
+ 
 
 # Wifi
 PRODUCT_PACKAGES += \
