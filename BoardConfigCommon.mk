@@ -122,8 +122,6 @@ TARGET_USERIMAGES_USE_F2FS := true
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := device/lge/b1w-common/releasetools
 
-# RIL
-BOARD_RIL_CLASS += ../../../device/lge/b1w-common/ril
 
 # SDClang
 TARGET_USE_SDCLANG := true
