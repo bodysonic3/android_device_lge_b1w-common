@@ -89,8 +89,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # BoringSSL compatability wrapper
 PRODUCT_PACKAGES += \
-    libboringssl-compat \
-    libstlport
+    libboringssl-compat
 
 # Camera
 PRODUCT_PACKAGES += \
@@ -143,6 +142,9 @@ PRODUCT_PACKAGES += \
 # IRSC
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sec_config:system/etc/sec_config
+
+# Libstlport
+PRODUCT_PACKAGES += libstlport
 
 # Lights
 PRODUCT_PACKAGES += \
