@@ -16,7 +16,6 @@
 
 # Call common vendor
 $(call inherit-product-if-exists, vendor/lge/b1w-common/b1w-common-vendor.mk)
-$(call inherit-product-if-exists, vendor/qcom/binaries/msm8974/graphics/graphics-vendor.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS := $(LOCAL_PATH)/overlay
