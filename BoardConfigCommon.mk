@@ -91,7 +91,7 @@ SF_VSYNC_EVENT_PHASE_OFFSET_NS := 5000000
 VSYNC_EVENT_PHASE_OFFSET_NS := 7500000
 
 # HIDL
-DEVICE_MANIFEST_FILE := device/lge/g2-common/configs/manifest.xml
+DEVICE_MANIFEST_FILE := device/lge/b1w-common/configs/manifest.xml
 
 # Fonts
 EXTENDED_FONT_FOOTPRINT := true

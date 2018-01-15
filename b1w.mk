@@ -192,16 +192,12 @@ PRODUCT_COPY_FILES += \
 
 # NFC
 PRODUCT_PACKAGES += \
-<<<<<<< HEAD:b1w.mk
+	android.hardware.nfc@1.0-impl \
     com.android.nfc_extras \
     NfcNci \
     nfc_nci.pn54x.default \
     Tag
-=======
-    android.hardware.nfc@1.0-impl \
-    Tag \
-    com.android.nfc_extras
->>>>>>> dba2cdd... g2: build HIDL HALs:g2.mk
+
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/nfc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
