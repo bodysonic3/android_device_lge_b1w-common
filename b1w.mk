@@ -16,6 +16,7 @@
 
 # Call common vendor
 $(call inherit-product-if-exists, vendor/lge/b1w-common/b1w-common-vendor.mk)
+$(call inherit-product-if-exists, vendor/qcom/binaries/msm8974/graphics/graphics-vendor.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS := $(LOCAL_PATH)/overlay
@@ -88,8 +89,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # BoringSSL compatability wrapper
 PRODUCT_PACKAGES += \
-    libboringssl-compat \
-    libstlport
+    libboringssl-compat
 
 # Camera
 PRODUCT_PACKAGES += \
@@ -142,6 +142,9 @@ PRODUCT_PACKAGES += \
 # IRSC
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sec_config:system/etc/sec_config
+
+# Libstlport
+PRODUCT_PACKAGES += libstlport
 
 # Lights
 PRODUCT_PACKAGES += \
